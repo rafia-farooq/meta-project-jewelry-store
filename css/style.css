@@ -1,45 +1,160 @@
-/* CSS HEX
---black: #000000ff;
---white: #FFFFFFff;
---olive: #8E7A3Fff;
---satin-sheen-gold: #B09A51ff;
---antiflash-white: #F0F0F0ff;
+/* Global colours */
+:root {
+    --black: #000000ff;
+    --white: #FFFFFFff;
+    --olive: #8E7A3Fff;
+    --satin-sheen-gold: #B09A51ff;
+    --antiflash-white: #F0F0F0ff;
+  }
 
-/* CSS HSL */
-/* --black: hsla(0, 0%, 0%, 1);
---white: hsla(0, 0%, 100%, 1);
---olive: hsla(45, 39%, 40%, 1);
---satin-sheen-gold: hsla(46, 38%, 50%, 1);
---antiflash-white: hsla(0, 0%, 94%, 1); */
+/* General styles */
 
-/* SCSS HEX */
-/* $black: #000000ff;
-$white: #FFFFFFff;
-$olive: #8E7A3Fff;
-$satin-sheen-gold: #B09A51ff;
-$antiflash-white: #F0F0F0ff; */
+body{
+    color: var(--black) ;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
 
-/* SCSS HSL */
-/* $black: hsla(0, 0%, 0%, 1);
-$white: hsla(0, 0%, 100%, 1);
-$olive: hsla(45, 39%, 40%, 1);
-$satin-sheen-gold: hsla(46, 38%, 50%, 1);
-$antiflash-white: hsla(0, 0%, 94%, 1); */
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
 
-/* SCSS RGB */
-/* $black: rgba(0, 0, 0, 1);
-$white: rgba(255, 255, 255, 1);
-$olive: rgba(142, 122, 63, 1);
-$satin-sheen-gold: rgba(176, 154, 81, 1);
-$antiflash-white: rgba(240, 240, 240, 1); */
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
 
-/* SCSS Gradient */
-/* $gradient-top: linear-gradient(0deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-right: linear-gradient(90deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-bottom: linear-gradient(180deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-left: linear-gradient(270deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-top-right: linear-gradient(45deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-bottom-right: linear-gradient(135deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-top-left: linear-gradient(225deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-bottom-left: linear-gradient(315deg, #000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff);
-$gradient-radial: radial-gradient(#000000ff, #FFFFFFff, #8E7A3Fff, #B09A51ff, #F0F0F0ff); */ 
+h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+}
+
+a {
+    color: var(--olive);
+}
+
+section {
+    margin: 6%;
+}
+
+.special-heading{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+
+/* Header and nav bar */
+
+#nav-bar{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav-logo {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+/* Main body of the webpage */
+
+#three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#three-cols article {
+    padding: 2rem;
+}
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+}
+
+#footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
+
+/* logo column in footer */
+
+#logo-footer {
+    width: 200px;
+}
+
+/* menu lists in footer */
+#footer-columns ul {
+        padding-left: 0;
+}
+
+#footer-columns ul li {
+    list-style: none;
+    margin-bottom: 1.2rem;
+}
+
+/* Links styling (order: LVHA) */
+#footer-columns ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+#footer-columns ul li a:hover {
+    color: var(--olive);
+    text-decoration: underline;
+    text-decoration-thickness: 0.7px;
+    text-underline-offset: 10px;
+}
+
+/* copyright at the end of footer */
+
+#copyright p:first-child {
+    font-size: 16px;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+}
+
+#copyright p:last-child {
+    font-size: 14px;
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+}
