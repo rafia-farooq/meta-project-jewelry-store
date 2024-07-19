@@ -46,6 +46,20 @@ section {
     margin: 6%;
 }
 
+.button {    
+    background-color: var(--olive);
+    color: var(--white);
+    display: inline-block;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 0.12rem;
+    padding: 8px 45px;
+    box-shadow: 5px 5px 5px lightgray;
+    margin-top: 15px;
+}
+
 .special-heading{
     font-family: "Great Vibes", cursive;
     font-weight: 400;
@@ -107,7 +121,7 @@ nav ul {
 footer{
     background-color: var(--black);
     color: var(--white);
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 }
 
 #footer-columns {
@@ -146,6 +160,11 @@ footer{
 }
 
 /* copyright at the end of footer */
+
+#copyright {
+    border-top: 0.5px var(--antiflash-white) solid;
+    margin-top: 4rem;
+}
 
 #copyright p:first-child {
     font-size: 16px;
