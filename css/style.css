@@ -50,7 +50,7 @@ a {
 }
 
 section {
-    margin: 6%;
+    margin: 5%;
 }
 
 .button {    
@@ -109,6 +109,19 @@ nav ul {
     width: 60%;
 }
 
+/* Links styling (order: LVHA) */
+nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--olive);
+    text-decoration: underline;
+    text-decoration-thickness: 0.7px;
+    text-underline-offset: 10px;
+}
+
 /* Top banner section */
 #banner {
     background: url(../images/ring.jpg) no-repeat center center;
@@ -121,8 +134,53 @@ nav ul {
     background-color: rgba(72, 72, 72, 0.1);
     padding: 2rem;
 }
+
 /* Main body of the webpage */
 
+/* Animated text section */
+.animatedSection {
+    background-color: var(--black);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.animatedText span {
+    font-family: "Great Vibes", cursive;
+    font-size: 80px;
+    padding: 0 10px;
+    color: #fff;
+    animation: zoomup 3s linear infinite;
+    animation-delay: calc(300ms * var(--i));
+  }
+  
+  @keyframes zoomup {
+    0%,
+    100% {
+      color: var(--satin-sheen-gold);
+      filter: blur(1px);
+      text-shadow: 0 0 10px var(--satin-sheen-gold), 
+                    0 0 20px var(--satin-sheen-gold),
+                    0 0 30px var(--satin-sheen-gold),
+                    0 0 40px var(--satin-sheen-gold), 
+                    0 0 60px var(--satin-sheen-gold), 
+                    0 0 80px var(--satin-sheen-gold), 
+                    0 0 100px var(--satin-sheen-gold),
+                    0 0 120px var(--satin-sheen-gold);
+    }
+  
+    5%,
+    95% {
+      filter: blur(0);
+      color: #fff;
+      text-shadow: none;
+    }
+}
+
+#addSpace{
+    margin-right: 4rem;
+}
+/* Three column section */
 #three-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -135,6 +193,11 @@ nav ul {
 #three-cols img {
     width: 300px;
     border: 5px solid var(--olive);
+}
+
+#three-cols img:hover {
+    opacity: 0.5;
+    transition: .5s ease;
 }
 
 
@@ -269,3 +332,5 @@ footer{
 #attribution-links {
     font-size: 14px;
 }
+
+  
