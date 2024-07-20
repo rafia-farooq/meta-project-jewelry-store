@@ -48,20 +48,24 @@
 
         <!-----------  Body of the website ------------->
         <main>
-            <section>
-                <h1>HEADING</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget gravida ipsum, a facilisis eros. 
-                    Etiam et arcu risus. Curabitur posuere pellentesque urna. Nulla a elit ultricies, commodo dui quis, porttitor nunc. 
-                    Donec luctus iaculis dolor, eu fringilla libero vestibulum in. Nullam sit amet orci nec lectus luctus luctus at non urna. Suspendisse potenti. 
-                    Integer sit amet sapien at felis eleifend aliquam ut sed velit. Quisque tempus ultrices tortor, ac pretium mauris pulvinar nec. Etiam non suscipit purus. 
-                    Nunc sit amet purus euismod enim rutrum vulputate in id odio.
-                </p>
-                <a class="button" href="#">Contact Us</a>
+            <section id="banner">
+                <div>
+                    <h1>HEADING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget gravida ipsum, a facilisis eros. 
+                        Etiam et arcu risus. Curabitur posuere pellentesque urna. Nulla a elit ultricies, commodo dui quis, porttitor nunc. 
+                        Donec luctus iaculis dolor, eu fringilla libero vestibulum in. Nullam sit amet orci nec lectus luctus luctus at non urna. Suspendisse potenti. 
+                        Integer sit amet sapien at felis eleifend aliquam ut sed velit. Quisque tempus ultrices tortor, ac pretium mauris pulvinar nec. Etiam non suscipit purus. 
+                        Nunc sit amet purus euismod enim rutrum vulputate in id odio.
+                    </p>
+                    <a class="button" href="#">Contact Us</a>
+
+                </div>
             </section>
 
             <section id="three-cols">
                 <article>
                     <h2>heading of section</h2>
+                    <img src="images/studs.jpg" alt="studs">
                     <p>Praesent molestie mauris est, vel imperdiet nisl dignissim quis. Cras luctus feugiat lectus eget tempus. 
                         Vestibulum dignissim lectus eu metus pretium feugiat. Nam ligula libero, pharetra sed maximus a, hendrerit et nibh. Integer cursus commodo orci, 
                         vel luctus nibh sodales a. Morbi congue neque ornare sapien aliquet, vitae fringilla orci fermentum. Donec at neque nec ante finibus luctus. Duis fermentum massa erat, 
@@ -74,6 +78,7 @@
 
                 <article>
                     <h2>heading of section</h2>
+                    <img src="images/diamond-ring.jpg" alt="diamond ring">
                     <p>Praesent molestie mauris est, vel imperdiet nisl dignissim quis. Cras luctus feugiat lectus eget tempus. 
                         Vestibulum dignissim lectus eu metus pretium feugiat. Nam ligula libero, pharetra sed maximus a, hendrerit et nibh. Integer cursus commodo orci, 
                         vel luctus nibh sodales a. Morbi congue neque ornare sapien aliquet, vitae fringilla orci fermentum. Donec at neque nec ante finibus luctus. Duis fermentum massa erat, 
@@ -86,6 +91,7 @@
 
                 <article>
                     <h2>heading of section</h2>
+                    <img src="images/earings.jpg" alt="earings">
                     <p>Praesent molestie mauris est, vel imperdiet nisl dignissim quis. Cras luctus feugiat lectus eget tempus. 
                         Vestibulum dignissim lectus eu metus pretium feugiat. Nam ligula libero, pharetra sed maximus a, hendrerit et nibh. Integer cursus commodo orci, 
                         vel luctus nibh sodales a. Morbi congue neque ornare sapien aliquet, vitae fringilla orci fermentum. Donec at neque nec ante finibus luctus. Duis fermentum massa erat, 
@@ -103,6 +109,7 @@
             <div id="text">
                 <h4>Subscribe to get the latest offers</h4>
                 <p>Get best deals and offers in your inbox. Do not miss any discounts or special offers.</p>
+                <img src="images/bracelet.jpg" alt="bracelet">
             </div>
             <div>
                 <form action="#" method="post" autocomplete="on">
@@ -110,13 +117,13 @@
                     <fieldset>
                         <legend>Information:</legend>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Full name here" required><br>
+                        <input type="text" id="name" name="name" placeholder="Full name here" required autocomplete="name"><br>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
                     </fieldset>
 
                     <label for="choice">Select your favourite:</label>
-                    <input list="choice">
+                    <input list="choice" id="choice">
                     <datalist id="choice">
                         <option value="Necklaces">
                         <option value="Rings">
